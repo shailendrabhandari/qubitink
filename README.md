@@ -1,8 +1,14 @@
 # Qubit Ink @qubitink
 
-# Qubit Ink <a href="https://instagram.com/qubitink">
+# Qubit Ink <a href="https://www.instagram.com/qubitink/">
   <img alt="Instagram" src="https://img.shields.io/badge/Instagram-@qubitink-E4405F?logo=instagram&logoColor=white">
 </a>
+
+<p align="center">
+  <a href="https://www.instagram.com/qubitink/">
+    <img src="assets/qubitink_avatar_vibrant_circle.png" alt="Qubit Ink profile" width="200">
+  </a>
+</p>
 
 
 Quantum-inspired generative art in one Jupyter notebook. The notebook contains organized cells for each image and will evolve over time; re-run a cell to regenerate its figure.

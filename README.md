@@ -1,6 +1,5 @@
 # Qubit Ink @qubitink
-
-# Qubit Ink <a href="https://www.instagram.com/qubitink/">
+ <a href="https://www.instagram.com/qubitink/">
   <img alt="Instagram" src="https://img.shields.io/badge/Instagram-@qubitink-E4405F?logo=instagram&logoColor=white">
 </a>
 

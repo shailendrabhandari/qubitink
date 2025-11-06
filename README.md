@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://www.instagram.com/qubitink/">
-    <img src="assets/qubitink_avatar_vibrant_circle.png" alt="Qubit Ink profile" width="200">
+    <img src="https://github.com/shailendrabhandari/qubitink/blob/main/qubitink_avatar_vibrant_1440_circle.png" alt="Qubit Ink profile" width="200">
   </a>
 </p>
 

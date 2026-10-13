@@ -80,14 +80,14 @@ This solves the stated Schrödinger equation without a time-stepping approximati
 
 ## 4. Density, interference, and current
 
-The probability density is $`\rho=|\psi|^2`$. If $`\phi_k`$ denotes the normalized position-space coherent component, then
+The probability density is $`\rho=|\psi|^{2}`$. If $`\phi_k`$ denotes the normalized position-space coherent component, then
 
-$$
+```math
 \rho = \sum_{k}|c_k|^{2}|\phi_k|^{2}
 + 2\,\mathrm{Re}\left(
 \sum_{k<l}\overline{c_k}\,c_l\,\overline{\phi_k}\,\phi_l
 \right).
-$$
+```
 
 The cross terms produce the interference pattern. Density has units of inverse volume when physical units are restored.
 

@@ -1,0 +1,9 @@
+
+# Generated media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+__pycache__/
+*.pyc

@@ -1,0 +1,5 @@
+numpy
+Pillow
+moderngl
+glcontext
+imageio-ffmpeg

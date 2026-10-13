@@ -23,3 +23,8 @@ Open the notebook, run cells from top to bottom. Each cell saves PNG (and some S
 ## License
 
 MIT.
+
+
+## Quantum wave-packet animation
+
+[Quantum wave-packet animation and mathematics](quantum_wavepacket/README.md)

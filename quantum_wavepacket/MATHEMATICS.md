@@ -50,7 +50,7 @@ Coherent states overlap, so normalizing the coefficients with $`\sum_k|r_k|^2`$ 
 $$
 G_{kl}=\langle\boldsymbol\alpha_k|\boldsymbol\alpha_l\rangle
 =\exp\!\left[-\frac{\|\boldsymbol\alpha_k\|^2+\|\boldsymbol\alpha_l\|^2}{2}
-+\boldsymbol\alpha_k^*\cdot\boldsymbol\alpha_l\right].
++\overline{\boldsymbol\alpha_k}\cdot\boldsymbol\alpha_l\right].
 $$
 
 The code sets $`c_k=r_k/\sqrt{\mathbf r^\dagger G\mathbf r}`$, giving $`\mathbf c^\dagger G\mathbf c=1`$.
@@ -85,7 +85,7 @@ The probability density is $`\rho=|\psi|^2`$. If $`\phi_k`$ denotes the normaliz
 $$
 \rho = \sum_{k} |c_k|^{2} |\phi_k|^{2}
 + 2\,\mathrm{Re}\left(
-\sum_{k<l} c_k^* c_l \phi_k^* \phi_l
+\sum_{k<l} \overline{c_k} c_l \overline{\phi_k} \phi_l
 \right).
 $$
 
@@ -94,7 +94,7 @@ The cross terms produce the interference pattern. Density has units of inverse v
 For this scalar Hamiltonian, the probability current is
 
 $$
-\mathbf j=\mathrm{Im}(\psi^*\nabla\psi),\qquad
+\mathbf j=\mathrm{Im}(\overline{\psi}\nabla\psi),\qquad
 \partial_\tau\rho+\nabla\cdot\mathbf j=0.
 $$
 
@@ -104,7 +104,7 @@ $$
 \partial_{x_i}u_k=\sqrt{\omega_i}\left[-(\xi_i-q_{ki})+ip_{ki}\right]u_k.
 $$
 
-The shaders evaluate these analytic derivatives, the density, the current, and $`\nabla\rho=2\mathrm{Re}(\psi^*\nabla\psi)`$ directly. There is no stochastic dynamics or quantum measurement in this calculation.
+The shaders evaluate these analytic derivatives, the density, the current, and $`\nabla\rho=2\mathrm{Re}(\overline{\psi}\nabla\psi)`$ directly. There is no stochastic dynamics or quantum measurement in this calculation.
 
 ## 5. What the curves mean
 

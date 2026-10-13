@@ -61,8 +61,8 @@ Each coherent amplitude rotates independently:
 
 $$
 \alpha_{ki}(\tau)=\alpha_{ki}(0)e^{-i\omega_i\tau},\qquad
-q_{ki}(\tau)=\sqrt2\,\operatorname{Re}\alpha_{ki}(\tau),\qquad
-p_{ki}(\tau)=\sqrt2\,\operatorname{Im}\alpha_{ki}(\tau).
+q_{ki}(\tau)=\sqrt2\,\mathrm{Re}\alpha_{ki}(\tau),\qquad
+p_{ki}(\tau)=\sqrt2\,\mathrm{Im}\alpha_{ki}(\tau).
 $$
 
 Equivalently, $q_{ki}(\tau)=q_{ki}(0)\cos\omega_i\tau+p_{ki}(0)\sin\omega_i\tau$ and $p_{ki}(\tau)=p_{ki}(0)\cos\omega_i\tau-q_{ki}(0)\sin\omega_i\tau$.
@@ -84,7 +84,7 @@ The probability density is $\rho=|\psi|^2$. If $\phi_k$ denotes the normalized p
 
 $$
 \rho=\sum_k|c_k|^2|\phi_k|^2
-+2\operatorname{Re}\sum_{k<l}c_k^*c_l\phi_k^*\phi_l.
++2\mathrm{Re}\sum_{k<l}c_k^*c_l\phi_k^*\phi_l.
 $$
 
 The cross terms produce the interference pattern. Density has units of inverse volume when physical units are restored.
@@ -92,7 +92,7 @@ The cross terms produce the interference pattern. Density has units of inverse v
 For this scalar Hamiltonian, the probability current is
 
 $$
-\mathbf j=\operatorname{Im}(\psi^*\nabla\psi),\qquad
+\mathbf j=\mathrm{Im}(\psi^*\nabla\psi),\qquad
 \partial_\tau\rho+\nabla\cdot\mathbf j=0.
 $$
 
@@ -102,7 +102,7 @@ $$
 \partial_{x_i}u_k=\sqrt{\omega_i}\left[-(\xi_i-q_{ki})+ip_{ki}\right]u_k.
 $$
 
-The shaders evaluate these analytic derivatives, the density, the current, and $\nabla\rho=2\operatorname{Re}(\psi^*\nabla\psi)$ directly. There is no stochastic dynamics or quantum measurement in this calculation.
+The shaders evaluate these analytic derivatives, the density, the current, and $\nabla\rho=2\mathrm{Re}(\psi^*\nabla\psi)$ directly. There is no stochastic dynamics or quantum measurement in this calculation.
 
 ## 5. What the curves mean
 

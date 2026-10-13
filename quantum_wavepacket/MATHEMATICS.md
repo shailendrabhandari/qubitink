@@ -80,7 +80,13 @@ This solves the stated Schrödinger equation without a time-stepping approximati
 
 ## 4. Density, interference, and current
 
-The probability density is $`\rho=|\psi|^{2}`$. If $`\phi_k`$ denotes the normalized position-space coherent component, then
+The probability density is the squared magnitude of the wavefunction:
+
+```math
+\rho = |\psi|^{2}.
+```
+
+Let phi_k denote a normalized coherent-state component. The density is
 
 ```math
 \rho = \sum_{k}|c_k|^{2}|\phi_k|^{2}
@@ -89,22 +95,32 @@ The probability density is $`\rho=|\psi|^{2}`$. If $`\phi_k`$ denotes the normal
 \right).
 ```
 
-The cross terms produce the interference pattern. Density has units of inverse volume when physical units are restored.
+An overline denotes complex conjugation. The cross terms produce interference. In physical units, density has units of inverse volume.
 
-For this scalar Hamiltonian, the probability current is
+For the stated Hamiltonian, with hbar and mass set to one, the probability current and continuity equation are
 
-$$
-\mathbf j=\mathrm{Im}(\psi^*\nabla\psi),\qquad
-\partial_\tau\rho+\nabla\cdot\mathbf j=0.
-$$
+```math
+\mathbf{j} = \mathrm{Im}\left(\overline{\psi}\,\nabla\psi\right),
+\qquad
+\partial_{\tau}\rho + \nabla\cdot\mathbf{j} = 0.
+```
 
-In physical units the current has an additional factor $`\hbar/m`$. For a component term $`u_k`$ in the sum above, its derivative is
+In physical units, the current includes an additional factor of hbar divided by mass.
 
-$$
-\partial_{x_i}u_k=\sqrt{\omega_i}\left[-(\xi_i-q_{ki})+ip_{ki}\right]u_k.
-$$
+For a coherent-component term in the wavefunction sum, the spatial derivative is
 
-The shaders evaluate these analytic derivatives, the density, the current, and $`\nabla\rho=2\mathrm{Re}(\psi^*\nabla\psi)`$ directly. There is no stochastic dynamics or quantum measurement in this calculation.
+```math
+\partial_{x_i}u_k
+= \sqrt{\omega_i}\left[-(\xi_i-q_{ki})+i p_{ki}\right]u_k.
+```
+
+The shaders evaluate these analytic derivatives, the current, and the density gradient:
+
+```math
+\nabla\rho = 2\,\mathrm{Re}\left(\overline{\psi}\,\nabla\psi\right).
+```
+
+There is no stochastic dynamics or quantum measurement in this calculation.
 
 ## 5. What the curves mean
 

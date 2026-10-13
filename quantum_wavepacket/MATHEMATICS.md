@@ -85,7 +85,7 @@ The probability density is $`\rho=|\psi|^2`$. If $`\phi_k`$ denotes the normaliz
 $$
 \rho = \sum_{k} |c_k|^{2} |\phi_k|^{2}
 + 2\,\mathrm{Re}\left(
-\sum_{k<l} c_k^{*} c_l \phi_k^{*} \phi_l
+\sum_{k<l} c_k^* c_l \phi_k^* \phi_l
 \right).
 $$
 

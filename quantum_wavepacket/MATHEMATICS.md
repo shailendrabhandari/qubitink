@@ -83,8 +83,10 @@ This solves the stated Schrödinger equation without a time-stepping approximati
 The probability density is $`\rho=|\psi|^2`$. If $`\phi_k`$ denotes the normalized position-space coherent component, then
 
 $$
-\rho=\sum_k|c_k|^2|\phi_k|^2
-+2\mathrm{Re}\sum_{k<l}c_k^*c_l\phi_k^*\phi_l.
+\rho=\sum_{k}|c_k|^{2}|\phi_k|^{2}
++2\mathrm{Re}\left(
+\sum_{k<l}c_k^{*}c_l\phi_k^{*}\phi_l
+\right).
 $$
 
 The cross terms produce the interference pattern. Density has units of inverse volume when physical units are restored.
